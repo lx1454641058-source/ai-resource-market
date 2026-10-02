@@ -1,0 +1,6 @@
+# 来源：官方PyPI，2026-09-23核对元数据/发行哈希；仅可选RSA2验签。
+# 本清单限定已核对的Windows amd64 wheels，使用CPython 3.12验证。
+# cryptography: Apache-2.0 OR BSD-3-Clause; cffi: MIT-0; pycparser: BSD-3-Clause.
+cryptography==50.0.1 --hash=sha256:aed8db4f6d71c51efb89530e12d9464e7bf2923d46c3205dc794a2a93f8c0648
+cffi==2.1.1 --hash=sha256:f53e442b08449d42821fa4a4fba000095af9f62742a500f978a9f557ec44339a
+pycparser==3.0 --hash=sha256:b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992

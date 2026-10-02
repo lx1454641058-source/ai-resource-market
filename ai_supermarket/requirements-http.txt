@@ -1,0 +1,5 @@
+# 来源：官方PyPI，2026-09-14核对。仅网络服务器需要，Python >=3.12。
+# Uvicorn/Click: BSD-3-Clause；h11: MIT。只允许下列已核对的通用wheel。
+uvicorn==0.53.0 --hash=sha256:e8dca71ec86dce5f04e333f0d56cdedf942446e6643b9cea1af0d6d3a02cb03e
+click==8.5.0 --hash=sha256:255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360
+h11==0.16.0 --hash=sha256:63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86

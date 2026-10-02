@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- 来源：本项目原创代码；第三方图形来源见credits.html。运行仅使用同目录资源，无追踪或外部网络请求。 -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a131f">
+  <title>星际拾光 · 接星星小游戏</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="engine.js"></script>
+  <script defer src="game.js"></script>
+</head>
+<body>
+<main>
+  <header class="masthead"><a class="brand" href="./index.html"><span class="brand-icon">✦</span> 星际拾光 <small>STAR CATCHER</small></a><span class="edition"><i></i> 一分钟，收集一点星光</span></header>
+  <div class="heading"><div><p class="eyebrow">A SMALL ESCAPE INTO SPACE</p><h1>把星光，<span>装进口袋。</span></h1><p class="intro">驾驶小飞船，接住坠落的星星。今晚的银河属于你。</p></div><div class="best-card"><span>本机最高分</span><strong id="best">000</strong><small id="save-note">记录保存在当前浏览器</small></div></div>
+  <div class="layout">
+    <section class="game-panel" aria-label="星际拾光游戏区">
+      <div class="dashboard"><div><span class="stat-label">已收集</span><strong id="score">000</strong></div><div class="timer"><span class="stat-label">剩余时间</span><strong><span id="time">60</span><small> s</small></strong></div><div class="health"><span class="stat-label">飞船护盾</span><strong id="lives" aria-label="剩余3次护盾">● ● ●</strong></div></div>
+      <div class="stage" id="stage">
+        <canvas id="sky" width="640" height="560" tabindex="0" role="img" aria-label="接星星游戏画布。左右方向键或A、D移动；触屏可拖动或按下方方向按钮；P暂停。"></canvas>
+        <div class="sector">SECTOR 07 <span>·</span> 星光航线</div><div id="combo" class="combo" hidden></div>
+        <div class="overlay" id="overlay"><div class="overlay-card"><div class="orbit-mark" aria-hidden="true">✦</div><p class="eyebrow" id="overlay-label">READY FOR TAKEOFF</p><h2 id="overlay-title">准备好出发了吗？</h2><p id="overlay-text">60 秒航行 · 3 格护盾<br>接住星星加分，遇见陨石记得绕行。</p><button class="primary" id="start">开始航行 <span aria-hidden="true">↗</span></button><p class="shortcut" id="shortcut">也可以按空格键开始</p></div></div>
+      </div>
+      <div class="game-toolbar"><div class="directions"><button id="left" aria-label="按住向左移动">←</button><button id="right" aria-label="按住向右移动">→</button><span>左右移动 / 拖动飞船</span></div><button class="pause" id="pause" disabled>暂停 <kbd>P</kbd></button></div>
+      <p class="sr-only" id="announcement" aria-live="polite"></p>
+    </section>
+    <aside>
+      <section class="mission"><p class="eyebrow">YOUR LITTLE MISSION</p><h2>轻松上手，<br>再多接一颗。</h2><div class="rule"><span class="rule-icon star-icon">✦</span><div><h3>追着星光走</h3><p>每颗星星 +10 分。连续接住时，奖励最高可到 5 倍。</p></div></div><div class="rule"><span class="rule-icon rock-icon">⬡</span><div><h3>和陨石保持距离</h3><p>碰撞损失一格护盾。漏接星星只会中断连击，不扣护盾。</p></div></div><div class="rule"><span class="rule-icon time-icon">◷</span><div><h3>享受这一分钟</h3><p>后半程会越来越快。时间结束或护盾耗尽后，随时再来一局。</p></div></div><div class="controls-note"><kbd>←</kbd> <kbd>→</kbd><span> 或 </span><kbd>A</kbd> <kbd>D</kbd><p>手机上拖动游戏区域即可移动。<br>切换窗口会自动暂停，回来继续。</p></div></section>
+      <div class="footnote"><span>✧</span><p>不必接住所有星星。<br>下一颗，也很闪亮。</p></div>
+    </aside>
+  </div>
+  <footer><span>AI 超市 · 小游戏试用</span><span id="art-note">原创代码与图形 · 可离线游玩</span><nav aria-label="游戏画面版本"><a href="?art=market">素材版</a><span> / </span><a href="?art=original">原创版</a><span> · </span><a href="credits.html">素材来源</a></nav></footer>
+</main>
+</body>
+</html>

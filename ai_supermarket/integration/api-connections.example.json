@@ -1,0 +1,20 @@
+{
+  "format": "market-api-connections-v1",
+  "database": "../market/market.sqlite",
+  "identities": "../market/identities.sqlite",
+  "budget": "../market/budget.sqlite",
+  "providers": [{
+    "provider": "supplier-api",
+    "binding_id": "supplier-connection",
+    "endpoint": "https://supplier.example.invalid/api",
+    "connection_key_file": "private/supplier-connection.json",
+    "operations": ["stock"],
+    "tasks": [{
+      "key_id": "ak_00000000000000000000000000000000",
+      "principal": "buyer",
+      "root_id": "approved-budget",
+      "task_id": "approved-task",
+      "purpose": "personal_use"
+    }]
+  }]
+}

@@ -1,0 +1,81 @@
+{
+  "format": "market-purchase-connections-v2",
+  "database": "../service/market.sqlite",
+  "identities": "../service/identities.sqlite",
+  "budget": "../service/budget.sqlite",
+  "channels": [
+    {
+      "id": "approved-channel",
+      "policy": {
+        "merchant": {
+          "market_id": "replace-market",
+          "market_seller": "replace-supplier",
+          "seller_id": "replace-seller-id",
+          "app_id": "replace-app-id",
+          "service_id": "replace-service-id",
+          "environment": "sandbox"
+        },
+        "qualification_reference": "replace-onboarding-evidence",
+        "signing_public_key_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "verification_public_key_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "amount_unit": "CNY_major",
+        "policy_reference": "replace-channel-policy-evidence",
+        "max_evidence_age_seconds": 120
+      },
+      "seller_name": "替换为已核准的卖家名称",
+      "signing_key_file": "../private/merchant-signing.pem",
+      "verification_key_file": "../private/channel-verification.pem",
+      "billing_enabled": false,
+      "verification_enabled": false
+    },
+    {
+      "id": "approved-second-channel",
+      "policy": {
+        "merchant": {
+          "market_id": "replace-market",
+          "market_seller": "replace-second-supplier",
+          "seller_id": "replace-second-seller-id",
+          "app_id": "replace-second-app-id",
+          "service_id": "replace-second-service-id",
+          "environment": "sandbox"
+        },
+        "qualification_reference": "replace-onboarding-evidence",
+        "signing_public_key_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "verification_public_key_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "amount_unit": "CNY_major",
+        "policy_reference": "replace-channel-policy-evidence",
+        "max_evidence_age_seconds": 120
+      },
+      "seller_name": "替换为第二家已核准卖家",
+      "signing_key_file": "../private/second-merchant-signing.pem",
+      "verification_key_file": "../private/channel-verification.pem",
+      "billing_enabled": false,
+      "verification_enabled": false
+    }
+  ],
+  "origins": [],
+  "tasks": [
+    {
+      "key_id": "ak_00000000000000000000000000000000",
+      "principal": "replace-buyer",
+      "root_id": "replace-root",
+      "task_id": "replace-task",
+      "purpose": "personal_use",
+      "mandate_id": "replace-existing-mandate",
+      "channel_id": "approved-channel",
+      "goal": "替换为实际任务目标",
+      "origins": []
+    },
+    {
+      "key_id": "ak_00000000000000000000000000000000",
+      "principal": "replace-buyer",
+      "root_id": "replace-root",
+      "task_id": "replace-task",
+      "purpose": "personal_use",
+      "mandate_id": "replace-second-existing-mandate",
+      "channel_id": "approved-second-channel",
+      "goal": "替换为实际任务目标",
+      "origins": []
+    }
+  ]
+}

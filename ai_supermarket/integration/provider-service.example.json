@@ -1,0 +1,34 @@
+{
+  "format": "market-json-provider-service-v1",
+  "market_url": "https://market.example.invalid",
+  "provider": "supplier-api",
+  "binding_id": "supplier-connection",
+  "seller": "supplier",
+  "key_id": "ak_00000000000000000000000000000000",
+  "listen_port": 8771,
+  "release": {
+    "id": "supplier:stock",
+    "version": "1.0.0",
+    "release_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "api": {
+    "provider": "supplier-api",
+    "operation": "stock",
+    "total_units": 10,
+    "validity_seconds": 3600,
+    "result_max_bytes": 4096,
+    "input_fields": [
+      {"name": "warehouse", "type": "string", "required": true, "limit": 32, "description": "获准查询的仓库编号"}
+    ]
+  },
+  "backend": {
+    "endpoint": "https://data.example.invalid/stock",
+    "query_map": {"warehouse": "location"},
+    "fixed_query": {"format": "json"},
+    "timeout": 10
+  },
+  "result_checks": [
+    {"path": ["count"], "type": "integer", "minimum": 0},
+    {"path": ["warehouse"], "type": "string", "input": "warehouse"}
+  ]
+}

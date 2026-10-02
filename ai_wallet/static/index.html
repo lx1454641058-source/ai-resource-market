@@ -1,0 +1,38 @@
+<!-- 本项目原创；未引入第三方代码或素材。 -->
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>予行 · AI 消费权限</title>
+  <link rel="stylesheet" href="/static/app.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview" aria-label="予行首页"><span class="brand-symbol" aria-hidden="true">予</span><span>予行<small>AI 消费权限</small></span></a>
+      <div class="sidebar-caption">预算与权限管理</div>
+      <nav aria-label="主导航">
+        <button class="nav-item active" data-page="overview"><span aria-hidden="true">◫</span>钱包概览</button>
+        <button class="nav-item" data-page="inbox"><span aria-hidden="true">◷</span>待办<span id="inbox-count" class="nav-count" aria-label="待办数量" hidden>0</span></button>
+        <button class="nav-item" data-page="policy"><span aria-hidden="true">◎</span>授权规则</button>
+        <button class="nav-item" data-page="orders"><span aria-hidden="true">≡</span>交易记录</button>
+        <button class="nav-item" data-page="tasks"><span aria-hidden="true">◇</span>AI 与任务</button>
+      </nav>
+      <div class="sidebar-note"><span class="tiny-label">你的决定，明确的边界</span><p>让每一笔 AI 采购<br>都有预算、有理由、可追溯。</p><span class="local-chip"><i></i> 本地预算规则</span></div>
+      <button class="nav-item sidebar-integration" data-page="integration"><span aria-hidden="true">⇄</span>AI 接入</button>
+      <button class="nav-item sidebar-help" data-page="operations"><span aria-hidden="true">ⓘ</span>帮助说明</button>
+      <div class="workspace-user"><span class="avatar">我</span><div>个人工作空间<small>所有者 · 完整控制权</small></div></div>
+    </aside>
+    <div class="workspace">
+      <div class="demo-strip"><span class="demo-dot"></span><strong>支付工具未连接 · 不会真实扣款</strong><span class="demo-detail">当前尚未形成银行卡扣款保护</span></div>
+      <header class="topbar"><div class="breadcrumb">个人工作空间 <span>/</span> <span id="breadcrumb-page">钱包概览</span></div><div class="topbar-actions"><span id="wallet-status" class="status-badge">正在加载</span><button id="refresh-button" class="button button-small" type="button">刷新</button><button id="pause-button" class="button button-small" disabled>暂停消费授权</button><span id="sync-status" class="sync-status" role="status" aria-live="polite">等待同步</span><button id="logout-button" class="button button-small logout-button" type="button" hidden>退出</button></div></header>
+      <main id="main" tabindex="-1"><div class="loading">正在读取本地钱包…</div></main>
+      <footer class="footer"><span>予行 · 把每次授权，落实到每笔采购。</span><span>额度不是现金余额 · 当前交易为测试数据，仅存本地</span></footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

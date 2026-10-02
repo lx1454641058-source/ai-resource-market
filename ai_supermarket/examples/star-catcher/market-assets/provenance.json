@@ -1,0 +1,65 @@
+{
+  "source_page": "https://kenney.nl/assets/space-shooter-remastered",
+  "download_url": "https://kenney.nl/media/pages/assets/space-shooter-remastered/2cbf3c45c8-1774771931/kenney_space-shooter-remastered.zip",
+  "archive_sha256": "0edbe0ab5cda6c44901d8c42f150268fdfa0c8d48492098669f37e9c296929b5",
+  "license": "CC0-1.0",
+  "legal_summary": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "reviewed_on": "2026-09-17",
+  "members": [
+    {
+      "id": "local-curation:kenney-ship",
+      "source_member": "PNG/playerShip1_green.png",
+      "asset": {
+        "file": "asset.png",
+        "sha256": "3294fa91a204ad1a1951812d735bbaadb15b861316f3833ed535b6f92f68a9f6",
+        "bytes": 2708
+      },
+      "approval": {
+        "status": "approved",
+        "id": "local-curation:kenney-ship",
+        "version": "1.0.0",
+        "revision": 1
+      },
+      "scope": "当前AI已核官网及包内CC0、目视图形、原字节/尺寸、无外部依赖的receive_asset契约；仅隔离本地试用自检，非独立权利认证或真实商家审核。",
+      "independent_reviewer": false
+    },
+    {
+      "id": "local-curation:kenney-meteor",
+      "source_member": "PNG/Meteors/meteorBrown_med1.png",
+      "asset": {
+        "file": "asset.png",
+        "sha256": "1ed498b78b7ad51655f3b345fbe002e2e6499137af369259a955b7664232b9ae",
+        "bytes": 982
+      },
+      "approval": {
+        "status": "approved",
+        "id": "local-curation:kenney-meteor",
+        "version": "1.0.0",
+        "revision": 1
+      },
+      "scope": "当前AI已核官网及包内CC0、目视图形、原字节/尺寸、无外部依赖的receive_asset契约；仅隔离本地试用自检，非独立权利认证或真实商家审核。",
+      "independent_reviewer": false
+    },
+    {
+      "id": "local-curation:kenney-star",
+      "source_member": "PNG/Power-ups/star_gold.png",
+      "asset": {
+        "file": "asset.png",
+        "sha256": "3f5a0475047029cd6253b32a968b02f1ec1285acd8ce631d03dabddfcefba3c0",
+        "bytes": 675
+      },
+      "approval": {
+        "status": "approved",
+        "id": "local-curation:kenney-star",
+        "version": "1.0.0",
+        "revision": 1
+      },
+      "scope": "当前AI已核官网及包内CC0、目视图形、原字节/尺寸、无外部依赖的receive_asset契约；仅隔离本地试用自检，非独立权利认证或真实商家审核。",
+      "independent_reviewer": false
+    }
+  ],
+  "independent_review": false,
+  "external_seller_onboarded": false,
+  "task": "star-catcher-market-art",
+  "manifest_sha256": "0f32be19e14231e75275d2f8cefdccc6e6ebd28e0d90c54b8d1f8057552704d8"
+}

@@ -1,0 +1,931 @@
+{
+  "schema_version": 1,
+  "resources": [
+    {
+      "id": "product-analysis",
+      "version": "1.0.0",
+      "kind": "skill",
+      "title": "产品分析方法",
+      "summary": "把产品想法整理为问题、目标、范围与可验证假设。",
+      "keywords": [
+        "产品分析",
+        "产品方案",
+        "产品经理",
+        "product analysis",
+        "product",
+        "定位"
+      ],
+      "path": "content/product-analysis.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "产品想法、已知用户与约束",
+      "output": "结论、证据、范围与验证步骤",
+      "check": "事实与假设分开；每个目标有验收方法。",
+      "sha256": "c633ea01217fb49b5fb106ad8dcb450b16dcf0f26b09e9bdb710d7959100456d"
+    },
+    {
+      "id": "requirement-slicing",
+      "version": "1.0.0",
+      "kind": "skill",
+      "title": "需求拆解",
+      "summary": "将模糊需求拆成最小完整流程与可判定验收。",
+      "keywords": [
+        "需求拆解",
+        "需求分析",
+        "验收",
+        "用户故事",
+        "requirements",
+        "scope"
+      ],
+      "path": "content/requirement-slicing.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "目标、约束和已有流程",
+      "output": "需求条目与正常/失败验收",
+      "check": "每项包含触发、前提、输出与失败处理。",
+      "sha256": "c53bf550df638c3fc1916857113b64156a82d3d4f31042221bc67bbcfd19f537"
+    },
+    {
+      "id": "evidence-mapping",
+      "version": "1.0.0",
+      "kind": "skill",
+      "title": "证据核对",
+      "summary": "把结论映射到实际支持它的来源，区分事实与推断。",
+      "keywords": [
+        "证据",
+        "引用",
+        "来源核对",
+        "事实核查",
+        "evidence",
+        "citation",
+        "sources"
+      ],
+      "path": "content/evidence-mapping.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "待发布结论与已取得的资料",
+      "output": "结论-来源-支持范围表",
+      "check": "来源真实可定位；不支持的结论标未知或删除。",
+      "sha256": "6a57273f4d8e771da57bbd1f78ed341920bbcf32d4d52d2bf0275ccbcd728e47"
+    },
+    {
+      "id": "competitor-comparison",
+      "version": "1.0.0",
+      "kind": "skill",
+      "title": "同口径竞品比较",
+      "summary": "按同一任务、约束与证据比较替代方案。",
+      "keywords": [
+        "竞品",
+        "竞品比较",
+        "替代方案",
+        "对比",
+        "competitor",
+        "comparison"
+      ],
+      "path": "content/competitor-comparison.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "候选方案与目标任务",
+      "output": "比较矩阵、取舍和待验证项",
+      "check": "比较口径一致；未知不填0；包括不使用新产品。",
+      "sha256": "2b3dddfa35c8d7c9c207d51f47328a8873c41bf659b7a0b7bea9ee32644d75f7"
+    },
+    {
+      "id": "cost-accounting",
+      "version": "1.0.0",
+      "kind": "skill",
+      "title": "任务成本核算",
+      "summary": "计算包含失败、检索、反馈与人工的每个有效任务成本。",
+      "keywords": [
+        "成本",
+        "token",
+        "预算",
+        "费用",
+        "cost",
+        "budget",
+        "用量"
+      ],
+      "path": "content/cost-accounting.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "真实用量、计价、完成数与缺失项",
+      "output": "分项成本、每合格任务成本和未知范围",
+      "check": "失败计入分子；分母为合格任务；未知不等于0。",
+      "sha256": "a04d1d16f6312d0f312b5077ba46bb3b92b304ebc82f3556c5a3c59dbff00418"
+    },
+    {
+      "id": "interview-plan",
+      "version": "1.0.0",
+      "kind": "skill",
+      "title": "问题访谈方法",
+      "summary": "围绕最近真实经历验证需求，减少诱导性问题。",
+      "keywords": [
+        "访谈",
+        "用户研究",
+        "调研",
+        "interview",
+        "research"
+      ],
+      "path": "content/interview-plan.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "目标问题与受访角色",
+      "output": "访谈提纲、匿名证据和反例",
+      "check": "有知情许可；行为事实与未来意愿分开。",
+      "sha256": "9e7e19513bce3191f39be12ed7ea080e2436b420e3fad4917f5446a070ae0d49"
+    },
+    {
+      "id": "evaluation-plan",
+      "version": "1.0.0",
+      "kind": "skill",
+      "title": "对照实验方法",
+      "summary": "在质量护栏下比较方案，预先固定样本和成功标准。",
+      "keywords": [
+        "评估",
+        "实验",
+        "测试计划",
+        "A/B",
+        "evaluation",
+        "experiment",
+        "基线"
+      ],
+      "path": "content/evaluation-plan.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "候选方案、对照和任务验收标准",
+      "output": "固定指标、样本、停止规则和分析方法",
+      "check": "开发与测试分离；报告失败、缺失与范围。",
+      "sha256": "1471a0ee2a5a7b6e4e07f452fac5e5829fab1d96bf37819b3e4940992a73fc4f"
+    },
+    {
+      "id": "incident-review",
+      "version": "1.0.0",
+      "kind": "skill",
+      "title": "故障复盘方法",
+      "summary": "记录事实时间线、影响、恢复与防复发措施。",
+      "keywords": [
+        "事故",
+        "故障",
+        "复盘",
+        "incident",
+        "postmortem",
+        "回滚"
+      ],
+      "path": "content/incident-review.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "故障记录、真实系统状态和已采取措施",
+      "output": "时间线、归因、恢复证据与行动",
+      "check": "推测不作根因；每项行动有负责人与验证。",
+      "sha256": "60e963f3cbab551b546fca3f21fc0c1ca50a07e91d8cea7adcfcefb04d45dd3f"
+    },
+    {
+      "id": "product-brief",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "产品简报模板",
+      "summary": "用问题、对象、方案、证据与边界形成一页产品简报。",
+      "keywords": [
+        "产品简报",
+        "产品介绍",
+        "产品定位",
+        "brief",
+        "介绍"
+      ],
+      "path": "content/product-brief.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "产品名称与有依据的项目信息",
+      "output": "Markdown产品简报",
+      "check": "所有占位项已填写或明确待验证。",
+      "sha256": "3b0804c074bf4f5db8fb45cae402dedad76098aafc64e71aa380be968c5f806f"
+    },
+    {
+      "id": "prd-outline",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "需求文档模板",
+      "summary": "记录背景、目标、功能契约、异常与验收。",
+      "keywords": [
+        "PRD",
+        "需求文档",
+        "需求说明",
+        "specification"
+      ],
+      "path": "content/prd-outline.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "已确认目标与功能范围",
+      "output": "Markdown需求文档",
+      "check": "每功能有正常和失败用例、责任与版本。",
+      "sha256": "c585e9942486d0a370611a48871c9d937baf29d9b74113679561da9c67a657ca"
+    },
+    {
+      "id": "comparison-table",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "方案比较表",
+      "summary": "以一致维度展示候选方案与现有替代。",
+      "keywords": [
+        "比较表",
+        "对比表",
+        "竞品表",
+        "comparison table",
+        "matrix"
+      ],
+      "path": "content/comparison-table.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "统一任务口径与候选证据",
+      "output": "Markdown比较表",
+      "check": "有现有方案；未知项不替换为0。",
+      "sha256": "858eb12fc045dae49afc32045e4519aa06092182fbddf3d85a1182f122407cf9"
+    },
+    {
+      "id": "risk-register",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "风险登记模板",
+      "summary": "把风险与预防、可观测信号、处置和责任配对。",
+      "keywords": [
+        "风险登记",
+        "风险表",
+        "风险清单",
+        "risk",
+        "风险"
+      ],
+      "path": "content/risk-register.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "已识别失败方式与责任候选",
+      "output": "Markdown风险表",
+      "check": "每风险有触发、信号、动作、负责人和恢复条件。",
+      "sha256": "d336a38094af46203e6fd865ac83d030227366de97d97985c1f53c82fb6b0d09"
+    },
+    {
+      "id": "experiment-card",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "实验登记卡",
+      "summary": "在测试前固定假设、对照、口径和停止条件。",
+      "keywords": [
+        "实验卡",
+        "实验登记",
+        "实验设计",
+        "experiment card"
+      ],
+      "path": "content/experiment-card.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "候选变化和验收目标",
+      "output": "Markdown实验卡",
+      "check": "不以日期到期代替样本充分；结果栏不预填。",
+      "sha256": "f7a9ab6244b494bcac9b5a80652c465ae28ddbabcd413d465e25af005fe2ea45"
+    },
+    {
+      "id": "source-log",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "来源记录表",
+      "summary": "追踪事实、版本、支持范围与使用权。",
+      "keywords": [
+        "来源表",
+        "资料来源",
+        "引用表",
+        "source log",
+        "bibliography"
+      ],
+      "path": "content/source-log.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "已取得的资料及结论",
+      "output": "Markdown来源表",
+      "check": "不编造链接/作者/时间；使用权未知就标未知。",
+      "sha256": "8f651f25848d15e5ec4d2e76ddb4cf5a68d7f62fed284da49051ba532829e5f0"
+    },
+    {
+      "id": "decision-log",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "决策记录模板",
+      "summary": "保留选项、取舍、有权人、真实决定与证据。",
+      "keywords": [
+        "决策记录",
+        "决策表",
+        "decision log",
+        "选择"
+      ],
+      "path": "content/decision-log.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "待决定事项、选项与已有证据",
+      "output": "Markdown决策记录",
+      "check": "推荐不等于批准；没有决定保持待决定。",
+      "sha256": "1b53a0a1e5e80308609ba788bb6ee752313d27099c2819832cdf24858bf79407"
+    },
+    {
+      "id": "handoff-checklist",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "交接验收清单",
+      "summary": "核对责任、资产、权限与独立运行证据。",
+      "keywords": [
+        "交接",
+        "移交",
+        "handoff",
+        "接手"
+      ],
+      "path": "content/handoff-checklist.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "运行资产与接收角色",
+      "output": "Markdown交接清单",
+      "check": "不能只交文件；接手人独立完成演练。",
+      "sha256": "2ebad8daa02b531d3396e746fe07724b218084e53e9cfad56682c6dcce579385"
+    },
+    {
+      "id": "release-checklist",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "发布核对清单",
+      "summary": "发布前核对范围、版本、证据与可恢复性。",
+      "keywords": [
+        "发布检查",
+        "上线检查",
+        "release",
+        "上线"
+      ],
+      "path": "content/release-checklist.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "待发布版本和真实测试记录",
+      "output": "Markdown发布核对清单",
+      "check": "缺专业签核或授权时不得声称已发布。",
+      "sha256": "b81a24201698c3e156feec9f3b96d78c0482bca13523d83c3c8862357659c2b2"
+    },
+    {
+      "id": "meeting-actions",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "行动纪要模板",
+      "summary": "分离讨论、建议、决定与可跟踪行动。",
+      "keywords": [
+        "会议纪要",
+        "行动项",
+        "纪要",
+        "meeting",
+        "notes"
+      ],
+      "path": "content/meeting-actions.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "真实会议记录或讨论内容",
+      "output": "Markdown纪要",
+      "check": "不编造参会者/决定；行动与负责人可追踪。",
+      "sha256": "b4c2fd4bf08c9241fccdc8978241e64bdd248c63279506a51820f33fa9cbfbaa"
+    },
+    {
+      "id": "milestone-plan",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "里程碑计划模板",
+      "summary": "串联依赖、可开始条件、交付和决策门。",
+      "keywords": [
+        "里程碑",
+        "排期",
+        "主计划",
+        "milestone",
+        "roadmap",
+        "计划表"
+      ],
+      "path": "content/milestone-plan.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "范围、人员容量与依赖",
+      "output": "Markdown计划表",
+      "check": "日期未知用相对窗口；已完成必须有证据。",
+      "sha256": "017b4f0768cbdc8e339148c7b5a9567c53625639af79833458fb87e15b01fc76"
+    },
+    {
+      "id": "feedback-guide",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "极简反馈字典",
+      "summary": "使用后仅报告已有检查，不把模型自评写成独立验证。",
+      "keywords": [
+        "反馈",
+        "评价",
+        "评分",
+        "feedback",
+        "rating"
+      ],
+      "path": "content/feedback-guide.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "真实使用事件与已有检查结论",
+      "output": "固定枚举反馈",
+      "check": "unknown不等于失败；只有实际检查才报pass/fail。",
+      "sha256": "94ec06bc13b240b41c4c7fa788fa501a73f03928677060d61b379d1c53fa7829"
+    },
+    {
+      "id": "csv-cleaning",
+      "version": "1.0.0",
+      "kind": "skill",
+      "title": "CSV清洗与核对",
+      "summary": "确认字段语义、保留前导零、处理异常并核对清洗前后数据。",
+      "keywords": [
+        "CSV",
+        "csv",
+        "数据清洗",
+        "表格清洗",
+        "前导零"
+      ],
+      "path": "content/csv-cleaning.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "数据样例、字段含义、行粒度及输出用途",
+      "output": "清洗规则、新数据、异常表与数量核对",
+      "check": "未知不填0；编号不丢前导零；行数差异有解释。",
+      "sha256": "cf5071b63e6436d86ae759a2f7e8575eee7975bfbae320be724d5517d9f511c6"
+    },
+    {
+      "id": "csv-field-dictionary",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "表格字段字典与清洗回执",
+      "summary": "记录字段类型、单位、转换规则和逐行异常，便于复核。",
+      "keywords": [
+        "字段字典",
+        "清洗回执",
+        "表格字段",
+        "data dictionary"
+      ],
+      "path": "content/csv-field-dictionary.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "实际列名、脱敏样例和已确认的业务含义",
+      "output": "字段字典、异常清单及前后核对表",
+      "check": "每项转换可追溯；未确认字段保持待确认。",
+      "sha256": "d894ad4b8d86fc4e0c55aae7e8e44cfc2a38632241b57447e1a8513673b4216d"
+    },
+    {
+      "id": "bug-triage",
+      "version": "1.0.0",
+      "kind": "skill",
+      "title": "程序故障定位",
+      "summary": "以最小复现区分假设，沿数据流定位原因并验证最小修复。",
+      "keywords": [
+        "故障定位",
+        "程序报错",
+        "调试",
+        "debug",
+        "bug"
+      ],
+      "path": "content/bug-triage.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "复现步骤、预期实际、错误及环境",
+      "output": "原因证据、最小修复与复验结果",
+      "check": "保留失败输入；不把观察点直接当根因。",
+      "sha256": "ca37010aa8ea82fe7ccf2f6173535e1fc4abd238f362d3d82fec18871ef2276b"
+    },
+    {
+      "id": "bug-reproduction",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "最小故障复现单",
+      "summary": "给开发者一份可重现、可验证并保留未知范围的故障记录。",
+      "keywords": [
+        "复现单",
+        "bug报告",
+        "故障报告",
+        "复现步骤"
+      ],
+      "path": "content/bug-reproduction.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "实际故障现象、环境和最小脱敏输入",
+      "output": "故障单、假设检查与修复回执",
+      "check": "步骤能重现；修复结论对应实际复验。",
+      "sha256": "8369c3038c65579e33e950f99ffc1b565914767d77c8916d2820f9457855a252"
+    },
+    {
+      "id": "web-content-structure",
+      "version": "1.0.0",
+      "kind": "skill",
+      "title": "网站内容与页面结构",
+      "summary": "从访客目标组织页面、内容依据及真实交互状态。",
+      "keywords": [
+        "网站文案",
+        "页面结构",
+        "落地页",
+        "网页内容",
+        "landing page"
+      ],
+      "path": "content/web-content-structure.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "受众、主要行动、真实内容和品牌约束",
+      "output": "页面结构、内容缺口与主路径检查",
+      "check": "不虚构案例；主操作与提交状态反映真实能力。",
+      "sha256": "6ed252fa560e119482992a1cc6450a00348b0240f08a5e5d8e3343e239508f87"
+    },
+    {
+      "id": "page-content-spec",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "网页内容与行为规格",
+      "summary": "逐区块明确内容、事实依据、按钮去向和失败状态。",
+      "keywords": [
+        "页面规格",
+        "网页规格",
+        "网站内容表",
+        "交互状态"
+      ],
+      "path": "content/page-content-spec.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "受众、页面目的和真实可用入口",
+      "output": "内容区块表、交互状态及检查回执",
+      "check": "每个按钮有目的地；未就绪状态不冒充成功。",
+      "sha256": "57a4fdbeb97233ffada88e1caa4a67d8663dbf41a3a0673713263c594a9e7199"
+    },
+    {
+      "id": "video-preproduction",
+      "version": "1.0.0",
+      "kind": "skill",
+      "title": "短视频制作前置方案",
+      "summary": "把目标拆成可制作镜头，明确旁白、时长和素材需求。",
+      "keywords": [
+        "短视频",
+        "视频脚本",
+        "视频制作",
+        "视频策划"
+      ],
+      "path": "content/video-preproduction.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "受众、时长、画幅、真实信息及素材",
+      "output": "分镜方案、素材权利缺口与成片检查",
+      "check": "时间合计可核；脚本与成片状态分开。",
+      "sha256": "7f7cbf91f0956f346d39b3874162d61f9e6549315abb129026bbbf9e069fcdd8"
+    },
+    {
+      "id": "storyboard-sheet",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "分镜与素材需求表",
+      "summary": "记录每个镜头、旁白、素材许可和导出验收状态。",
+      "keywords": [
+        "分镜",
+        "storyboard",
+        "素材需求表",
+        "镜头表"
+      ],
+      "path": "content/storyboard-sheet.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "视频目标、镜头想法和已知素材",
+      "output": "分镜表、素材清单与交付回执",
+      "check": "每镜有时长；未知许可不视为免费授权。",
+      "sha256": "b7ba0b9f4e52b051fc4681ea0716fd58e8f291bede19ceadde1da96a6af5bd0a"
+    },
+    {
+      "id": "domain-onboarding",
+      "version": "1.0.0",
+      "kind": "skill",
+      "title": "陌生领域任务入门",
+      "summary": "从成果目标拆出必要概念、事实缺口、资源与最短任务路线。",
+      "keywords": [
+        "陌生领域",
+        "入门",
+        "概念学习",
+        "新领域",
+        "领域知识"
+      ],
+      "path": "content/domain-onboarding.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "用户期望成果、用途、已有信息和限制",
+      "output": "任务路径、必要概念及分类缺口",
+      "check": "不把方法当行业事实；概念对应实际决策。",
+      "sha256": "1f4cb4849000c755d54c99ee32a758e28aed49a5525b5ed73d1eadc829043dca"
+    },
+    {
+      "id": "concept-map-card",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "任务概念地图",
+      "summary": "把必要术语、依据、行动步骤与资源缺口对应到成果。",
+      "keywords": [
+        "概念地图",
+        "术语表",
+        "概念卡",
+        "知识地图"
+      ],
+      "path": "content/concept-map-card.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "任务目标、已知术语及来源",
+      "output": "概念表、任务路径和缺口清单",
+      "check": "定义有依据；未知要求保持未知。",
+      "sha256": "dae9597d197f543e547a1128e09e677c1cf322f6b55576b0cdf724cbf30a9f60"
+    },
+    {
+      "id": "customer-support-triage",
+      "version": "1.0.0",
+      "kind": "skill",
+      "title": "客服问题归类与交接",
+      "summary": "依据真实问题和政策准备回复、定位材料及处理交接。",
+      "keywords": [
+        "客服",
+        "客户反馈",
+        "售后问题",
+        "support"
+      ],
+      "path": "content/customer-support-triage.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "脱敏反馈、产品行为和现行政策",
+      "output": "问题分类、回复草稿和交接事项",
+      "check": "无政策不承诺赔付；草稿不冒称已发送。",
+      "sha256": "2bc6e37644bb58b4a95bf7a27740ed8c6844dca7e3d892b6d12402ed9f658a99"
+    },
+    {
+      "id": "support-handoff",
+      "version": "1.0.0",
+      "kind": "template",
+      "title": "客服问题交接单",
+      "summary": "把诉求、证据、复现和待决事项交给明确的处理方。",
+      "keywords": [
+        "客服交接",
+        "售后工单",
+        "客户问题单",
+        "客服记录"
+      ],
+      "path": "content/support-handoff.md",
+      "source": "project-original",
+      "license": "Project-Local",
+      "allowed_uses": [
+        "project_local"
+      ],
+      "permissions": [],
+      "format": "markdown",
+      "state": "active",
+      "price_cents": 0,
+      "currency": "CNY",
+      "input": "实际诉求、影响、检查记录与处理方",
+      "output": "交接单、回复草稿与关闭依据",
+      "check": "已交接不等于已解决；关闭须有证据。",
+      "sha256": "c84a2988fd182624aa2e6d69e1ae8816217bf5ebd92ee2195e20175df479f706"
+    }
+  ]
+}
